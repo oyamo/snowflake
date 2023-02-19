@@ -46,10 +46,6 @@ func New(dataCenterID, machineId int8) Snowflake {
 
 	lastSequence++
 
-	if lastSequence > 1<<12 {
-		lastSequence &= 0x1F
-	}
-
 	// convert dataCenterID to 64 bit
 	var datacenter64 int64 = int64(dataCenterID)
 	var machineId64 int64 = int64(machineId)
