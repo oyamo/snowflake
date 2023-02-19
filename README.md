@@ -27,6 +27,3 @@ s := snowflake.New(1, 1)
 fmt.Println(s.String())
 
 ```
-
-## LICENCE
-MIT Licence
